@@ -1,16 +1,16 @@
 #
-# OSGi enRoute Default Distro 
+# OSGi enRoute Default Distro
 #
 # This file defines the properties to be used in an enRoute workspace.
 #
 
 -runfw: org.eclipse.osgi
 
--plugin.enroute.distro = \
+-plugin.9x.enroute.distro = \
 	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
 		snapshotUrls=https://oss.sonatype.org/content/groups/osgi; \
 		releaseUrls=https://repo1.maven.org/maven2/; \
-		revision=org.osgi:osgi.enroute.pom.distro:2.0.0; \
+		revision=org.osgi:osgi.enroute.pom.distro:2.1.0-SNAPSHOT; \
 		name=Distro; \
 		location=${build}/cache/enroute-distro.xml
 
@@ -34,7 +34,7 @@
 -runpath.eqnx: 					osgi.enroute.equinox.log.adapter
 -runrequires.eqnx: \
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.log)'
-	
+
 
 -runsystempackages.eqnx:		javax.script
 -runsystemcapabilities.dflt: 	${native_capability}
@@ -47,4 +47,3 @@ debug-bundles: \
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)', \
 	osgi.identity;filter:='(osgi.identity=osgi.enroute.base.debug.provider)'
-
