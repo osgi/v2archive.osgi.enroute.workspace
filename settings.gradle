@@ -1,0 +1,9 @@
+// TODO change to maven central after release
+buildscript {
+	repositories { maven{ url 'https://bndtools.ci.cloudbees.com/job/bnd.master/lastSuccessfulBuild/artifact/dist/bundles/' } }
+	dependencies { classpath "biz.aQute.bnd:biz.aQute.bnd.gradle:${bnd_version}" }
+}
+
+
+apply plugin: 'biz.aQute.bnd.workspace'
+
