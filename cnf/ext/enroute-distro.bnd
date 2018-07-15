@@ -14,7 +14,8 @@
 	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
 		snapshotUrls=https://oss.sonatype.org/content/groups/osgi; \
 		releaseUrls=https://repo1.maven.org/maven2/; \
-		pom=https://raw.githubusercontent.com/osgi/v2archive.osgi.enroute/2143c6d2201de67ec3a90223eaf1a5f18bc1700c/osgi.enroute.pom.distro/pom.xml; \
+		pom=org.osgi:osgi.enroute.pom.distro:2.1.0-SNAPSHOT; \
+		transitive=true; \
 		name=Distro; \
 		location=${build}/cache/enroute-distro.xml
 
