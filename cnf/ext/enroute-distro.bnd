@@ -6,11 +6,15 @@
 
 -runfw: org.eclipse.osgi
 
+#
+# Hardcoded to a specific for now, must be replaced with release 2.1 POM
+#
+
 -plugin.9x.enroute.distro = \
 	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
 		snapshotUrls=https://oss.sonatype.org/content/groups/osgi; \
 		releaseUrls=https://repo1.maven.org/maven2/; \
-		revision=org.osgi:osgi.enroute.pom.distro:2.1.0-SNAPSHOT; \
+		pom=https://raw.githubusercontent.com/osgi/v2archive.osgi.enroute/2143c6d2201de67ec3a90223eaf1a5f18bc1700c/osgi.enroute.pom.distro/pom.xml; \
 		name=Distro; \
 		location=${build}/cache/enroute-distro.xml
 
